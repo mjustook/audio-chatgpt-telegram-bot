@@ -106,7 +106,7 @@ def reset(update, context):
 
 
 def main():
-    updater = Updater(DefaultConfig.API_TELEGRAM, use_context=True)
+    updater = Updater(DefaultConfig.TELEGRAM_TOKEN, use_context=True)
 
     dp = updater.dispatcher
 
