@@ -36,7 +36,7 @@ Credits: @faviasono ✌🏻
 
 You are ready to go 🚀
     """
-    print("TOKEN desde DefaultConfig:", DefaultConfig.TELEGRAM_TOKEN)
+    print("TOKEN desde DefaultConfig:", DefaultConfig.API_TELEGRAM)
     update.message.reply_text(start_text)
 
 
@@ -106,7 +106,7 @@ def reset(update, context):
 
 
 def main():
-    updater = Updater(DefaultConfig.TELEGRAM_TOKEN, use_context=True)
+    updater = Updater(DefaultConfig.API_TELEGRAM, use_context=True)
 
     dp = updater.dispatcher
 
@@ -127,8 +127,8 @@ def main():
         updater.start_webhook(
             listen="0.0.0.0",
             port=int(DefaultConfig.PORT),
-            url_path=DefaultConfig.TELEGRAM_TOKEN,
-            webhook_url=DefaultConfig.WEBHOOK_URL + DefaultConfig.TELEGRAM_TOKEN
+            url_path=DefaultConfig.API_TELEGRAM,
+            webhook_url=DefaultConfig.WEBHOOK_URL + DefaultConfig.API_TELEGRAM
         )
 
         logging.info(f"Start webhook mode on port {DefaultConfig.PORT}")
