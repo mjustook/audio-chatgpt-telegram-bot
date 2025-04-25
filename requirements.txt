@@ -4,3 +4,4 @@ python-dotenv
 ffmpeg-python
 six
 psycopg2-binary
+urllib3==1.26.16
