@@ -36,7 +36,7 @@ Credits: @faviasono ✌🏻
 
 You are ready to go 🚀
     """
-    
+    print("TOKEN desde DefaultConfig:", DefaultConfig.TELEGRAM_TOKEN)
     update.message.reply_text(start_text)
 
 
