@@ -5,4 +5,3 @@ ffmpeg-python==0.2.0
 six==1.16.0
 psycopg2-binary==2.9.9
 urllib3==1.26.16
-fix: agrego urllib3 y psycopg2
