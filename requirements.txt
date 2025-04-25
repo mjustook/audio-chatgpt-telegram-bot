@@ -1,6 +1,6 @@
-python-telegram-bot==13.7
+python-telegram-bot==13.5
 openai
 python-dotenv
 ffmpeg-python
-six==1.16.0
-urllib3==1.26.16
+six
+psycopg2-binary
